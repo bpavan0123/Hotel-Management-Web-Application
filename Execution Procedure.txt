@@ -1,0 +1,40 @@
+Execution Procedure:
+
+	First copy the folder in 
+	
+	C:\Program Files\Apache Software Foundation\Tomcat 7.0\webapps\ROOT 
+
+	after that, create Data source name (dsn) name  in
+
+
+	control panel -> administrative tools-> system dsn
+
+
+	data source name: hotel 
+
+
+first page:
+
+		http:\\localhost:8080\Hotel_Management\home.html
+
+
+Data source name:hotel
+
+
+		Admin Login
+		-----------
+
+		admin login:Admin
+		admin password:Admin
+
+		Reciptinist login
+		-----------------
+
+	receptionist:receptionist
+	receptionist:receptionist
+
+		Customer Login
+		--------------
+
+		customer login:prathima
+		password:12345678

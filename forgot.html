@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Forgot Password JSP</title>
+<script type="text/javascript" language="javascript">
+function checkPassword(form) { 
+                npwd1 = form.npwd1.value; 
+                npwd2 = form.npwd2.value; 
+  
+      
+                if (npwd1 == '') 
+                    alert ("Please enter Password"); 
+                      
+       
+                else if (npwd2 == '') 
+                    alert ("Please enter confirm password"); 
+                      
+            
+                else if (npwd1 != npwd2) { 
+                    alert ("Password did not match Please try again") 
+                    return false; 
+                } 
+  
+                else{
+		
+			
+			return true;           
+} 
+}
+        </script>
+<style> 
+            .sha { 
+                font-size:40px; 
+                color:green; 
+                font-weight:bold; 
+                text-align:center; 
+            } 
+            .shan { 
+                font-size:17px; 
+                text-align:center; 
+                margin-bottom:20px; 
+            } 
+        </style>  
+</head>
+<body><center>
+        <h1>FORGOT PASSWORD</h1><br><br><br>
+        <form onSubmit = "return checkPassword(this)" action="forgot_pwd.jsp">
+        <table border="0" cellspacing="5px" cellpadding="5px" align="center">
+        <img src="for.jpg" width="20%" height="200px">	<br><br>		
+                    <tr>
+                        <td><b>USER NAME:</b></td>
+                        <td><input type="text" name="uname" placeholder="Username" style="font-size: 1.2em" ></td>
+                    </tr>
+                    <tr>
+                        <td><b>GMAIL:</b></td>
+                        <td><input type="text" name="email"  placeholder="Example@mail.com" style="font-size: 1.2em" ></td>
+                    </tr>
+                    <tr>
+                        <td><b>NEW PASSWORD:</b></td>
+                        <td><input type="password" name="npwd1" placeholder="******" style="font-size: 1.2em" ></td>
+                    </tr>
+                    <tr>
+                        <td><b>CONFIRM PASSWORD:</b></td>
+                        <td><input type="password" name="npwd2"  placeholder="******" style="font-size: 1.2em" ></td>
+                    </tr>
+                    </table></br></br>
+    <input type="submit" value="SUBMIT" style="padding:15px;border-radius: 15px;background-color:red;color: white">
+        </form>
+    </center>
+    </body>
+</html>
